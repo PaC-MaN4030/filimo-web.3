@@ -45,6 +45,7 @@ footer {
     &:hover > div.li {
       opacity: 1;
       bottom: 140%;
+      display: block;
     }
     &:hover > h5 {
       color: whitesmoke;
@@ -56,6 +57,7 @@ footer {
       transition: 300ms;
     }
     div.li {
+      display: none;
       width: 160px;
       position: absolute;
       bottom: 200%;
@@ -93,8 +95,10 @@ li.lists {
   &:hover > div.li {
     opacity: 1;
     bottom: 130%;
+    display: block;
   }
   div.li {
+    display: none;
     width: 160px;
     background-color: #191919;
     position: absolute;

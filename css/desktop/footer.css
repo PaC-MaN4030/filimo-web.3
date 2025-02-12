@@ -1,0 +1,127 @@
+footer {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 200;
+  bottom: 0;
+  background-color: #191919;
+  div.list {
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      li {
+        width: fit-content;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 4px;
+        padding: 4px 8px;
+        &:hover > svg,
+        &:hover > h5 {
+          fill: whitesmoke;
+          color: whitesmoke;
+        }
+        svg {
+          width: 25px;
+          height: 25px;
+          fill: #959595;
+          transition: 300ms;
+        }
+        h5 {
+          font-size: 11px;
+          color: #959595;
+          transition: 300ms;
+        }
+      }
+    }
+  }
+  div.social {
+    position: relative;
+    &:hover > div.li {
+      opacity: 1;
+      bottom: 140%;
+    }
+    &:hover > h5 {
+      color: whitesmoke;
+    }
+    h5 {
+      padding: 4px 8px;
+      font-size: 11px;
+      color: #959595;
+      transition: 300ms;
+    }
+    div.li {
+      width: 160px;
+      position: absolute;
+      bottom: 200%;
+      right: -30%;
+      box-shadow: 8px 8px 25px #191919;
+      background-color: #191919;
+      opacity: 0;
+      transition: 300ms;
+      h6 {
+        padding: 8px;
+        font-size: 10px;
+        color: #959595;
+        transition: 300ms;
+        &:hover {
+          color: whitesmoke;
+          background-color: #bebebe41;
+        }
+      }
+      div.arrow-down {
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        position: absolute;
+        top: 100%;
+        left: 60%;
+        border-top: 10px solid #191919;
+      }
+    }
+  }
+}
+
+li.lists {
+  position: relative;
+  &:hover > div.li {
+    opacity: 1;
+    bottom: 130%;
+  }
+  div.li {
+    width: 160px;
+    background-color: #191919;
+    position: absolute;
+    bottom: 200%;
+    box-shadow: 8px 8px 25px #191919;
+    opacity: 0;
+    transition: 400ms;
+    h6 {
+      padding: 8px;
+      font-size: 10px;
+      color: #959595;
+      transition: 300ms;
+      &:hover {
+        color: whitesmoke;
+        background-color: #bebebe41;
+      }
+    }
+  }
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: 100%;
+  left: 60%;
+  border-top: 10px solid #191919;
+}

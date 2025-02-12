@@ -1,0 +1,362 @@
+{
+  "menu": [
+    {
+      "id": "1",
+      "title": "فیلیموتور",
+      "href": "#"
+    },
+    {
+      "id": "2",
+      "title": "فیلیمومدرسه",
+      "href": "#"
+    },
+    {
+      "id": "3",
+      "icon": "./img/search.svg",
+      "title": "جستجو",
+      "href": "#"
+    }
+  ],
+  "login": [
+    {
+      "id": "1",
+      "title": "خرید اشتراک",
+      "s": "1",
+      "href": "#"
+    },
+    {
+      "id": "2",
+      "title": "ورود",
+      "s": "",
+      "href": "#"
+    }
+  ],
+  "slider": [
+    {
+      "id": "1",
+      "url": "./img/slider/slider1.jpeg"
+    },
+    {
+      "id": "2",
+      "url": "./img/slider/slider2.jpeg"
+    },
+    {
+      "id": "3",
+      "url": "./img/slider/slider3.jpeg"
+    },
+    {
+      "id": "4",
+      "url": "./img/slider/slider4.jpeg"
+    }
+  ],
+  "cover": [
+    {
+      "id": "1",
+      "subject": "با فیلیمو بی‌وقفه فیلم ببین",
+      "s": "1"
+    },
+    {
+      "id": "2",
+      "subject": "کنترل همیشه دست توست!",
+      "s": ""
+    }
+  ],
+  "pros": [
+    {
+      "id": "1",
+      "title": "98 هزار اپیزود فیلم و سریال برای تماشا داری"
+    },
+    {
+      "id": "2",
+      "title": "می‌تونی دانلود کنی بعد بدون اینترنت تماشا کنی"
+    },
+    {
+      "id": "3",
+      "title": "می‌تونی یک عضو، مخصوص تماشای کودک بسازی"
+    }
+  ],
+  "btn": [
+    {
+      "id": "1",
+      "title": "خرید اشتراک و تماشا",
+      "href": "#",
+      "s": "1"
+    },
+    {
+      "id": "2",
+      "title": "تخفیف ویژه برای کاربران جدید",
+      "href": "#",
+      "s": ""
+    }
+  ],
+  "accessImg": [
+    {
+      "id": "1",
+      "url": "./img/slider/access.webp"
+    }
+  ],
+  "device": [
+    {
+      "id": "1",
+      "url": "",
+      "title": "تماشای فیلیمو با همه دستگاه‌ها",
+      "describtion": "می‌توانید فیلیمو را به صورت هم‌زمان روی 3 دستگاه مختلف مثل موبایل، تبلت، لپ‌تاپ، تلویزیون و... تماشا کنید."
+    },
+    {
+      "id": "2",
+      "url": "./img/slider/svg1.webp",
+      "title": "کامپیوتر و لپ‌تاپ",
+      "describtion": "windows PC - MacOS - Chorom OS"
+    },
+    {
+      "id": "3",
+      "url": "./img/slider/svg2.webp",
+      "title": "موبایل و تبلت",
+      "describtion": "Android Phone & Tablets - Iphone and Ipad - Amazon Fire Tablets"
+    },
+    {
+      "id": "4",
+      "url": "./img/slider/svg3.webp",
+      "title": "کنسول‌های بازی (Browser)",
+      "describtion": "Xbox Series S - Xbox Seris X - PS5 - PS4"
+    }
+  ],
+  "subBtn": [
+    {
+      "id": "1",
+      "href": "#",
+      "tag": "خرید اشتراک و تماشا"
+    }
+  ],
+  "TVtitle": [
+    {
+      "id": "1",
+      "url": "",
+      "title": "چطور با تلویزیون، فیلیمو تماشا کنم؟",
+      "describtion": "ما برای راحتی شما و تماشای فیلیمو روی تلویزیون‌های مختلف 6 روش را فراهم کردیم. هرکدام از این 6 روش یک ویدیو آموزشی دارند که می‌توانید از لینک زیر، آن‌ها را تماشا کنید و روشی که با تلویزیون شما سازگار است را انتخاب کنید."
+    },
+    {
+      "id": "2",
+      "url": "./img/slider/access'svg.webp",
+      "title": "تلویزیون",
+      "describtion": "Amazon Fire TV - LG TVs - Chrome Cast - Apple TV - Android TV devices - Samsung"
+    },
+    {
+      "id": "3",
+      "url": "./img/slider/access''svg.webp",
+      "title": "اندروید تی‌وی",
+      "describtion": "NVIDIA - amazon - xiaomi - minix - skystream - turewell - ematic - humax - matricom"
+    }
+  ],
+  "TVbtn": [
+    {
+      "id": "1",
+      "href": "#",
+      "title": "ویدیوهای آموزشی تماشا با تلویزیون"
+    }
+  ],
+  "TVimg": [
+    {
+      "id": "1",
+      "url": "./img/slider/access'.webp"
+    }
+  ],
+  "freeTitle": [
+    {
+      "id": "1",
+      "title": "محتوای رایگان"
+    }
+  ],
+  "freeContent": [
+    {
+      "id": "2",
+      "url": "./img/free-content/num2.webp",
+      "tag": "پایتخت"
+    },
+    {
+      "id": "3",
+      "url": "./img/free-content/num3.webp",
+      "tag": "عقرب"
+    },
+    {
+      "id": "4",
+      "url": "./img/free-content/num4.webp",
+      "tag": "ملکه گدایان"
+    },
+    {
+      "id": "5",
+      "url": "./img/free-content/num5.webp",
+      "tag": "ویرانگر"
+    },
+    {
+      "id": "6",
+      "url": "./img/free-content/num1.webp",
+      "tag": "بالشتها"
+    },
+    {
+      "id": "7",
+      "url": "./img/free-content/num6.webp",
+      "tag": "راز دشت تاران"
+    },
+    {
+      "id": "8",
+      "url": "./img/free-content/num7.webp",
+      "tag": "چپ دست"
+    },
+    {
+      "id": "9",
+      "url": "./img/free-content/num8.webp",
+      "tag": "شب‌های مافیا 2"
+    },
+    {
+      "id": "10",
+      "url": "./img/free-content/num9.webp",
+      "tag": "مردم معمولی"
+    },
+    {
+      "id": "11",
+      "url": "./img/free-content/num10.webp",
+      "tag": "سال‌های دور از خانه"
+    },
+    {
+      "id": "12",
+      "url": "./img/free-content/num20.webp",
+      "tag": "زهر عسل"
+    },
+    {
+      "id": "13",
+      "url": "./img/free-content/num11.webp",
+      "tag": "پنجه در خاک"
+    },
+    {
+      "id": "14",
+      "url": "./img/free-content/num12.webp",
+      "tag": "شب‌های مافیا"
+    },
+    {
+      "id": "15",
+      "url": "./img/free-content/num13.webp",
+      "tag": "خوب بد جلف: رادیواکتیو"
+    },
+    {
+      "id": "15",
+      "url": "./img/free-content/num14.webp",
+      "tag": "صلیب طلایی"
+    }
+  ],
+  "kidsImg": [
+    {
+      "id": "1",
+      "imgUrl": "./img/animation/bg-kids.webp"
+    }
+  ],
+  "kids": [
+    {
+      "id": "1",
+      "text": {
+        "title": "دنیایی متنوع از فیلم و کارتون‌های کودکانه",
+        "describtion": "ساخت فیلیمو کودک این امکان را می‌دهد که با انتخاب سن فرزندتان، یک فضای امن برای تماشای کودک بسازید؛ یعنی محتوای مخصوص سن خودش را ببیند و به بقیه فیلم و سریال‌ها دسترسی نداشته‌باشد."
+      },
+      "btns": {
+        "btn1": "فیلیمو کودک بساز",
+        "href1": "#",
+        "btn2": "تماشای فیلیمو کودک",
+        "href2": "#"
+      }
+    }
+  ],
+  "productsTitle": [
+    {
+      "id": "1",
+      "title": "سینما آنلاین فیلیمو",
+      "options": {
+        "op1": "فیلم‌های روز سینمای ایران",
+        "op2": "۸ ساعت زمان برای مشاهده فیلم در هر کجا",
+        "op3": "خرید یک بلیت برای تماشا همراه با همه خانواده"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "url": "./img/products/product1.webp",
+      "title": "شهر گربه ها ۲",
+      "director": "کارگردان: سیدجواد هاشمی",
+      "genre": {
+        "g1": "خانوادگی",
+        "g2": "فانتزی"
+      },
+      "btn": "خریدبلیت"
+    },
+    {
+      "id": "2",
+      "url": "./img/products/product2.webp",
+      "title": "به زودی - شه سوار",
+      "director": "کارگردان: حسین نمازی",
+      "genre": {
+        "g1": "درام",
+        "g2": "کمدی"
+      },
+      "btn": "خریدبلیت"
+    },
+    {
+      "id": "3",
+      "url": "./img/products/product3.webp",
+      "title": "پول و پارتی",
+      "director": "کارگردان: سعید سهیلی",
+      "genre": {
+        "g1": "کمدی",
+        "g2": "عاشقانه"
+      },
+      "btn": "خریدبلیت"
+    }
+  ],
+
+  "footerList": [
+    {
+      "id": "1",
+      "title": "تماشا با تلویزیون"
+    },
+    {
+      "id": "2",
+      "title": "اپلیکیشن‌ها"
+    },
+    {
+      "id": "3",
+      "title": "تماس و پشتیبانی"
+    },
+    {
+      "id": "4",
+      "title": "فروشگاه"
+    },
+    {
+      "id": "5",
+      "title": "سایر لینک‌ها",
+      "links": {
+        "title1": "قوانین",
+        "title2": "به ما بپیوندید",
+        "title3": "تبلیغات در فیلیمو",
+        "title4": "لوگو",
+        "title5": "دانلود فیلم و سریال"
+      }
+    }
+  ],
+  "social": [
+    {
+      "id": "1",
+      "title": "آپارات"
+    },
+    {
+      "id": "",
+      "title": "تلگرام"
+    },
+    {
+      "id": "3",
+      "title": "توییتر"
+    },
+    {
+      "id": "4",
+      "title": "اینستاگرام"
+    }
+  ]
+}

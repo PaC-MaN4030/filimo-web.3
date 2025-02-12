@@ -1,0 +1,87 @@
+header {
+  width: 100%;
+  padding: 5px 60px;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  background-color: #000000ee;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 50px black;
+  div.right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    a {
+      img {
+        margin-top: 10px;
+        width: 90px;
+      }
+    }
+    div.border {
+      padding: 0;
+      height: 25px;
+      border-left: 1px solid #b2b2b2d2;
+    }
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      li {
+        padding: 10px 0;
+        list-style: none;
+        &:hover > a {
+          color: #f1a500;
+        }
+        img {
+          width: 18px;
+          object-fit: cover;
+        }
+        a {
+          color: whitesmoke;
+          transition: 300ms;
+          text-decoration: none;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  div.left {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    a.subscribtion {
+      padding: 10px 16px;
+      border-radius: 5px;
+      background-color: #1aa559;
+      color: white;
+      text-decoration: none;
+      font-size: 11px;
+      transition: 300ms;
+      &:hover {
+        background-color: #147941;
+      }
+    }
+    a.login {
+      padding: 10px 16px;
+      background-color: #2a2a2a;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-size: 11px;
+      transition: 300ms;
+      &:hover {
+        background-color: #393939;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: FILIMO;
+  font-weight: 200;
+}
+div#app {
+  width: 100%;
+}
+body {
+  background-color: #151515;
+}
+@font-face {
+  font-family: FILIMO;
+  src: url(../fonts/IRANSans-Medium-web.woff2);
+  src: url(../fonts/IRANSans-Medium.eot);
+  src: url(../fonts/IRANSans-Medium.ttf);
+  src: url(../fonts/IRANSans-Medium.woff);
+}

@@ -1,0 +1,54 @@
+div.animation {
+  background: -webkit-linear-gradient(245deg, #05c5ff6e 0, #151515 40%);
+  width: 100%;
+  padding: 0 60px;
+  padding-top: 42px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  div.right {
+    width: 40%;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  div.left {
+    width: 40%;
+    div.up {
+      width: 100%;
+      h1 {
+        font-size: 20px;
+        color: whitesmoke;
+        padding-bottom: 16px;
+      }
+      h5 {
+        font-size: 13px;
+        color: #a1a1a1;
+        padding-bottom: 32px;
+      }
+    }
+    div.down {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: right;
+      align-items: center;
+      gap: 16px;
+      a {
+        padding: 10px 16px;
+        background-color: #ededed;
+        border-radius: 12px;
+        color: #151515;
+        font-size: 11px;
+        font-weight: 700 !important;
+        text-decoration: none;
+        transition: 300ms;
+        &:hover {
+          background-color: #edededd5;
+        }
+      }
+    }
+  }
+}

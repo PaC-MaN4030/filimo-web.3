@@ -85,3 +85,7 @@ header {
     }
   }
 }
+div.show,
+.cross {
+  display: none;
+}

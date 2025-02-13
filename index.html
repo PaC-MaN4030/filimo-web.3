@@ -11,7 +11,32 @@
   <body>
     <div id="app">
       <!-- header -->
-      <header>
+      <div class="show" id="show">
+        <svg
+          width="30px"
+          height="30px"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          stroke="#ffc852"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              fill="#ff9b0f"
+              fill-rule="evenodd"
+              d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <header id="menu">
+        <div class="cross">&times;</div>
         <div class="right" id="right">
           <a href="./index.html">
             <img src="./img/filomo-logo.svg" alt="FILIMO ON TOP" />
@@ -75,24 +100,21 @@
       <!-- end products -->
       <!-- comments -->
       <div class="comments">
-        <h1>نظر کاربران بعد از تماشای فیلیمو</h1>
         <div class="swiper comment">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
+          <div class="btns">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-wrapper opinion" id="opinion"></div>
         </div>
       </div>
       <!-- end comments -->
+      <!-- acardion -->
+      <div class="acardion"></div>
+      <!-- end acardion -->
+      <!-- final filimo -->
+      <div class="final" id="final"></div>
+      <!-- end final filimo -->
       <!-- footer -->
       <footer>
         <div class="list">

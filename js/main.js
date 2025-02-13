@@ -4,8 +4,10 @@ import Cover from "./desktop/cover.js";
 import Access from "./desktop/access.js";
 import kids from "./desktop/kids.js";
 import Free from "./desktop/free.js";
-import Footer from "./desktop/footer.js";
 import Products from "./desktop/products.js";
+import Comment from "./desktop/comment.js";
+import Final from "./desktop/final.js";
+import Footer from "./desktop/footer.js";
 
 async function allData() {
   await swiper();
@@ -15,6 +17,7 @@ allData();
 async function swiper() {
   await Header.menu();
   await Header.login();
+  // await Header.show();
   await slider();
   await Cover.title();
   await Cover.pros();
@@ -29,10 +32,13 @@ async function swiper() {
   await kids.kidsImg();
   await Free.content();
   await Free.tit();
-  await Footer.footer();
-  await Footer.social();
   await Products.titr();
   await Products.products();
+  await Comment.coTitle();
+  await Comment.comments();
+  await Final.final();
+  await Footer.footer();
+  await Footer.social();
 
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 0,
@@ -40,10 +46,6 @@ async function swiper() {
     autoplay: {
       delay: 4000,
       disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
     },
     pagination: {
       el: ".swiper-pagination",
@@ -66,11 +68,11 @@ async function swiper() {
 
   var swiper = new Swiper(".comment", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 15,
     loop: true,
     centeredSlides: true,
     autoplay: {
-      delay: 3000,
+      delay: 3500,
       disableOnInteraction: false,
     },
     pagination: {
@@ -83,3 +85,8 @@ async function swiper() {
     },
   });
 }
+// let show = document.querySelector("#show");
+// let megamenu = document.querySelector("#menu");
+// show.addEventListener("click", function () {
+//   megamenu.classList.add(".active");
+// });

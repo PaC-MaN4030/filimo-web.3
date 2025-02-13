@@ -34,4 +34,26 @@ async function login() {
     .insertAdjacentHTML("afterbegin", mainbtn.join(""));
 }
 
-export default { menu, login };
+let showb = document.querySelector("#show");
+let megamenu = document.querySelector("#menu");
+let cross = document.querySelector("#cross");
+async function show() {
+  showb.addEventListener("click", function () {
+    let cover = document.createElement("div");
+    cover.classList.add("mobileCover");
+    document.body.insertAdjacentElement("beforeend", cover);
+
+    megamenu.classList.add("active");
+
+    cover.addEventListener("click", function () {
+      megamenu.classList.remove("active");
+      this.remove();
+    });
+    cross.addEventListener("click", function () {
+      megamenu.classList.remove("active");
+      cover.remove();
+    });
+  });
+}
+
+export default { menu, login, show };

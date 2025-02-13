@@ -6,6 +6,7 @@ import kids from "./desktop/kids.js";
 import Free from "./desktop/free.js";
 import Products from "./desktop/products.js";
 import Comment from "./desktop/comment.js";
+import Accardion from "./desktop/accardion.js";
 import Final from "./desktop/final.js";
 import Footer from "./desktop/footer.js";
 
@@ -17,7 +18,7 @@ allData();
 async function swiper() {
   await Header.menu();
   await Header.login();
-  // await Header.show();
+  await Header.show();
   await slider();
   await Cover.title();
   await Cover.pros();
@@ -36,6 +37,9 @@ async function swiper() {
   await Products.products();
   await Comment.coTitle();
   await Comment.comments();
+  await Accardion.accardion();
+  await Accardion.tt();
+  await Accardion.acardion();
   await Final.final();
   await Footer.footer();
   await Footer.social();
@@ -85,8 +89,3 @@ async function swiper() {
     },
   });
 }
-// let show = document.querySelector("#show");
-// let megamenu = document.querySelector("#menu");
-// show.addEventListener("click", function () {
-//   megamenu.classList.add(".active");
-// });

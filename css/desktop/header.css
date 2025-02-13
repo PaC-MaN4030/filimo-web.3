@@ -4,7 +4,7 @@ header {
   position: fixed;
   z-index: 50;
   top: 0;
-  background-color: #000000ee;
+  background-color: #000000b9;
   backdrop-filter: blur(10px);
   display: flex;
   flex-flow: row nowrap;

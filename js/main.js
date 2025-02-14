@@ -12,6 +12,9 @@ import Footer from "./desktop/footer.js";
 
 async function allData() {
   await swiper();
+  await swiperr();
+  await swiperrr();
+  await swiperrrr();
 }
 
 allData();
@@ -45,7 +48,7 @@ async function swiper() {
   await Footer.footer();
   await Footer.social();
 
-  var swiper = new Swiper(".mySwiper", {
+  var swiperr = new Swiper(".mySwiper", {
     spaceBetween: 0,
     effect: "fade",
     autoplay: {
@@ -58,7 +61,7 @@ async function swiper() {
     },
   });
 
-  var swiper = new Swiper(".Swiper", {
+  var swiperrr = new Swiper(".Swiper", {
     slidesPerView: 4,
     spaceBetween: 30,
     navigation: {
@@ -71,7 +74,7 @@ async function swiper() {
     },
   });
 
-  var swiper = new Swiper(".comment", {
+  var swiperrrr = new Swiper(".comment", {
     slidesPerView: 3,
     spaceBetween: 15,
     loop: true,

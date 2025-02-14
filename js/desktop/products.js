@@ -98,10 +98,12 @@ async function products() {
   let respone = await data.json();
   p = respone.map((item) => {
     return `<div class="eachOne">
+         <div class="all">
             <img
               src="${item.url}"
               alt="watch it online only on filimo"
             />
+         </div>
             <div class="info">
               <h1>${item.title}</h1>
               <h5>${item.director}</h5>

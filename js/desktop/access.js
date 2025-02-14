@@ -5,7 +5,8 @@ async function image() {
   let data = await fetch("http://localhost:3000/accessImg");
   let respone = await data.json();
   img = respone.map((item) => {
-    return `<img src="${item.url}" alt="what ever" />`;
+    return `<img src="${item.url}" class="none"
+    alt="what ever" />`;
   });
   document
     .querySelector("#rightA")
@@ -105,6 +106,7 @@ async function tvImg() {
   image = respone.map((item) => {
     return `<img
             src="${item.url}"
+            class="none"
             alt="choose filimo for better access"
           />`;
   });

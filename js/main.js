@@ -37,9 +37,10 @@ async function swiper() {
   await Products.products();
   await Comment.coTitle();
   await Comment.comments();
-  await Accardion.accardion();
+  // await Accardion.accardion();
   await Accardion.tt();
-  await Accardion.acardion();
+  await Accardion.accordion();
+  // await Accardion.acardion();
   await Final.final();
   await Footer.footer();
   await Footer.social();
@@ -58,7 +59,7 @@ async function swiper() {
   });
 
   var swiper = new Swiper(".Swiper", {
-    slidesPerView: 6,
+    slidesPerView: 4,
     spaceBetween: 30,
     navigation: {
       nextEl: ".swiper-button-next",

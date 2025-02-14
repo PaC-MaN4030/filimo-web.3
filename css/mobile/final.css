@@ -1,0 +1,66 @@
+div.final {
+  width: 100%;
+  padding: 64px;
+  background: radial-gradient(
+    100% 410.68% at 100% 100%,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 29, 13, 0.54) 53.55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  div.logo {
+    width: fit-content;
+    padding-bottom: 44px;
+  }
+  div.options {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    gap: 12px;
+    justify-content: space-around;
+    margin-bottom: 32px;
+    margin-right: 48px;
+    div#icon {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: baseline;
+      justify-content: center;
+      svg {
+        width: 20px;
+        height: 20px;
+        background-color: #015e01ad;
+        fill: #019301;
+        border-radius: 100%;
+        border: 2px solid green;
+        margin-left: 10px;
+      }
+      h5 {
+        font-size: 14px;
+        font-weight: 400;
+        color: #f5f5f5a3;
+      }
+    }
+  }
+  svg {
+    fill: whitesmoke;
+    width: 25px;
+    height: 25px;
+  }
+  a.sub {
+    font-size: 15px;
+    padding: 16px 50px;
+    background-color: #1cb561;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    transition: 300ms;
+    &:hover {
+      background-color: #147941;
+    }
+  }
+}

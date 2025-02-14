@@ -2,9 +2,9 @@
 
 async function kidsImg() {
   let img = "";
-  let data = await fetch("http://localhost:3000/kidsImg");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  img = respone.map((item) => {
+  img = respone.kidsImg.map((item) => {
     return `<img src="${item.imgUrl}" />`;
   });
   document
@@ -16,9 +16,9 @@ async function kidsImg() {
 
 async function kids() {
   let animation = "";
-  let data = await fetch("http://localhost:3000/kids");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  animation = respone.map((item) => {
+  animation = respone.kids.map((item) => {
     return `<div class="up" id="up">
             <h1>${item.text.title}</h1>
             <h5>${item.text.describtion}</h5>

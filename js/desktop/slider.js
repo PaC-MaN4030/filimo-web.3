@@ -1,8 +1,8 @@
 async function slider() {
   let Sliders = "";
-  let data = await fetch("http://localhost:3000/slider");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  Sliders = respone.map((item) => {
+  Sliders = respone.slider.map((item) => {
     return `
             <div class="swiper-slide">
               <img src="${item.url}" />

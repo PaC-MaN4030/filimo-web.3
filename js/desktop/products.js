@@ -2,9 +2,9 @@
 
 async function titr() {
   let t = "";
-  let data = await fetch("http://localhost:3000/productsTitle");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  t = respone.map((item) => {
+  t = respone.productsTitle.map((item) => {
     return ` <h1>${item.title}</h1>
           <div class="option">
             <div class="each">
@@ -94,9 +94,9 @@ async function titr() {
 
 async function products() {
   let p = "";
-  let data = await fetch("http://localhost:3000/products");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  p = respone.map((item) => {
+  p = respone.products.map((item) => {
     return `<div class="eachOne">
          <div class="all">
             <img

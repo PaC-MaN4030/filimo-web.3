@@ -2,9 +2,9 @@
 
 async function coTitle() {
   let c = "";
-  let data = await fetch("http://localhost:3000/coTitle");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  c = respone.map((item) => {
+  c = respone.coTitle.map((item) => {
     return `<h1>${item.title}</h1>`;
   });
   document
@@ -16,9 +16,9 @@ async function coTitle() {
 
 async function comments() {
   let c = "";
-  let data = await fetch("http://localhost:3000/comments");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  c = respone.map((item) => {
+  c = respone.comments.map((item) => {
     return `<div class="swiper-slide">
               <div class="top">
                 <div class="prof">

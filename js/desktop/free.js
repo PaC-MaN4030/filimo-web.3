@@ -2,9 +2,9 @@
 
 async function tit() {
   let t = "";
-  let data = await fetch("http://localhost:3000/freeTitle");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  t = respone.map((item) => {
+  t = respone.freeTitle.map((item) => {
     return `<h5>${item.title}</h5>`;
   });
   document
@@ -16,9 +16,9 @@ async function tit() {
 
 async function content() {
   let free = "";
-  let data = await fetch("http://localhost:3000/freeContent");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  free = respone.map((item) => {
+  free = respone.freeContent.map((item) => {
     return `<div class="swiper-slide">
               <img src="${item.url}" alt="watch it free" />
               <h5>${item.tag}</h5>

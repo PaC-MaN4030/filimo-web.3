@@ -2,9 +2,9 @@
 
 async function footer() {
   let f = "";
-  let data = await fetch("http://localhost:3000/footerList");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  f = respone.map((item) => {
+  f = respone.footerList.map((item) => {
     if (!!item.links) {
       return `<li class="lists">
                 <h5>${item.title}</h5>
@@ -32,9 +32,9 @@ async function footer() {
 
 async function social() {
   let s = "";
-  let data = await fetch("http://localhost:3000/social");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  s = respone.map((item) => {
+  s = respone.social.map((item) => {
     return `<h6>${item.title}</h6>`;
   });
   document.querySelector("#li").insertAdjacentHTML("afterbegin", s.join(""));

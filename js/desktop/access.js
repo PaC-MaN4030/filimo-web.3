@@ -2,9 +2,9 @@
 
 async function image() {
   let img = "";
-  let data = await fetch("http://localhost:3000/accessImg");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  img = respone.map((item) => {
+  img = respone.accessImg.map((item) => {
     return `<img src="${item.url}" class="none"
     alt="what ever" />`;
   });
@@ -17,9 +17,9 @@ async function image() {
 
 async function des() {
   let passage = "";
-  let data = await fetch("http://localhost:3000/device");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  passage = respone.map((item) => {
+  passage = respone.device.map((item) => {
     if (!item.url) {
       return `<div class="container">
             <h1>${item.title}</h1>
@@ -44,9 +44,9 @@ async function des() {
 
 async function button() {
   let btn = "";
-  let data = await fetch("http://localhost:3000/subBtn");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  btn = respone.map((item) => {
+  btn = respone.subBtn.map((item) => {
     return `<a href="${item.href}">${item.tag}</a>`;
   });
   document
@@ -60,9 +60,9 @@ async function button() {
 
 async function title() {
   let tv = "";
-  let data = await fetch("http://localhost:3000/TVtitle");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  tv = respone.map((item) => {
+  tv = respone.TVtitle.map((item) => {
     if (!item.url) {
       return `<div class="title">
             <h1>${item.title}</h1>
@@ -87,9 +87,9 @@ async function title() {
 
 async function tvBtn() {
   let tbtn = "";
-  let data = await fetch("http://localhost:3000/TVbtn");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  tbtn = respone.map((item) => {
+  tbtn = respone.TVbtn.map((item) => {
     return `<a href="${item.href}">${item.title}</a>`;
   });
   document
@@ -101,9 +101,9 @@ async function tvBtn() {
 
 async function tvImg() {
   let image = "";
-  let data = await fetch("http://localhost:3000/TVimg");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  image = respone.map((item) => {
+  image = respone.TVimg.map((item) => {
     return `<img
             src="${item.url}"
             class="none"

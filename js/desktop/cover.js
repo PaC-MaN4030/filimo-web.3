@@ -2,10 +2,9 @@
 
 async function title() {
   let t = "";
-  let data = await fetch("http://localhost:3000/cover");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  let flat = await respone.flat();
-  t = flat.map((item) => {
+  t = respone.cover.map((item) => {
     if (!!item.s) {
       return `<span class="first">${item.subject}</span>`;
     } else if (!item.s) {
@@ -19,9 +18,9 @@ async function title() {
 
 async function pros() {
   let option = "";
-  let data = await fetch("http://localhost:3000/pros");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  option = respone.map((item) => {
+  option = respone.pros.map((item) => {
     return `  <div id="icon">
               <svg
                 width="64px"
@@ -58,9 +57,9 @@ async function pros() {
 
 async function btns() {
   let btn = "";
-  let data = await fetch("http://localhost:3000/btn");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  btn = respone.map((item) => {
+  btn = respone.btn.map((item) => {
     if (!!item.s) {
       return ` <a href="${item.href}" class="subs">${item.title}</a>`;
     } else if (!item.s) {

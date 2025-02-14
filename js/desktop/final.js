@@ -1,8 +1,8 @@
 async function final() {
   let f = "";
-  let data = await fetch("http://localhost:3000/filimo");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  f = respone.map((item) => {
+  f = respone.filimo.map((item) => {
     return `    <div class="logo">
           <img src="${item.url}" alt="filimooooo" />
         </div>

@@ -1,8 +1,8 @@
 async function menu() {
   let mainmenu = "";
-  let data = await fetch("http://localhost:3000/menu");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  mainmenu = respone.map((item) => {
+  mainmenu = respone.menu.map((item) => {
     return `<li>
                 <a href="${item.href}">
                   <span>${item.title}</span>
@@ -15,9 +15,9 @@ async function menu() {
 }
 async function login() {
   let mainbtn = "";
-  let data = await fetch("http://localhost:3000/login");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  mainbtn = respone.map((item) => {
+  mainbtn = respone.login.map((item) => {
     if (!!item.s) {
       return `
       <a href="${item.href}" class="subscribtion">

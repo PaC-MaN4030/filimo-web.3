@@ -2,9 +2,9 @@
 
 async function tt() {
   let t = "";
-  let data = await fetch("http://localhost:3000/acarTitle");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let respone = await data.json();
-  t = respone.map((item) => {
+  t = respone.acarTitle.map((item) => {
     return `<h1>${item.title}</h1>
           <h5>${item.describtion}</h5>`;
   });
@@ -52,9 +52,9 @@ async function tt() {
 // }
 
 async function accordion() {
-  let data = await fetch("http://localhost:3000/acardion");
+  let data = await fetch("https://pac-man4030.github.io/db.local/db.json");
   let response = await data.json();
-  let a = response.map((item) => {
+  let a = response.acardion.map((item) => {
     return `
       <div class="num">
         <div class="couple">
